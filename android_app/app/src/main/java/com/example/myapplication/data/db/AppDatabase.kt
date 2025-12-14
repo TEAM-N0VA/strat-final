@@ -10,7 +10,7 @@ import androidx.room.RoomDatabase
 abstract class AppDatabase : RoomDatabase() {
 
     // 2. DAO(도구)를 꺼내 쓰는 함수를 만듭니다.
-    //abstract fun userDao(): UserDao
+    abstract fun userDao(): UserDao
 
     // 3. 싱글톤 패턴 (앱 전체에서 DB를 하나만 쓰도록 설정)
     companion object {
