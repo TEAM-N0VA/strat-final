@@ -132,10 +132,8 @@ fun sendDataToServer(db: AppDatabase) {
                 "cost" to entity.cost,
                 "timeMinutes" to entity.timeMinutes,
 
-                // 👇 [변경] 이제 진짜 category 컬럼의 값을 보냅니다!
                 "category" to entity.category,
-
-                // 👇 [추가] 횟수 정보도 서버로 보냅니다!
+                
                 "payment_count" to entity.paymentCount
             )
         }
